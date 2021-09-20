@@ -9,57 +9,86 @@
     <style>
 
         *{
-            margin:0;padding:0; font-family: 'Karla', sans-serif;
+            margin:0;padding:0; font-family: 'Karla', sans-serif; border-radius: 10px;
+            
         }
         
-        @media (min-width: 360px){ body{
-            background-color:rgba(174, 174, 245, 5);font-size:19px;font-weight: 300;
-            
-        padding: 24px;
-        display: grid;
-        grid-template-columns: repeat(1,2fr);
-        }
+        @media (min-width: 760px){body{
+            background-color:rgba(174, 174, 245, 5);font-size:15px;font-weight: 300;
+            }
         }
     
+        @media (min-width: 100px){body{
+            background-color:rgba(174, 174, 245, 5);font-size:15px;font-weight: 300;
+            }
+        }
         
         img{
-                display:block;
+                
                 max-width: 100%;
+                height:auto;max-width: 100%;
                 height:auto;
-                margin-bottom: 20px;
+                
                 
                 
         }
 
        
-        .content{
+        .container{
             display:grid;
-            grid-template-columns: repeat(1,2fr);
-            gap:10px;
+            grid-template-columns: 1fr 1fr ;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-gap:10px;
+            justify-items: center;
+            margin-right: 0%;
+            
+        }
+        h1{
+            text-align: center;
+        }
+        p{
+            text-align:left;margin:10px;
+        }
+
+        .item-7{
+            grid-column:1/2 ;
+            grid-row: 1/2;
+
+        }
+        .item-8{
+            grid-row: 1/2;
+
+        }
+        .item-5{
+            grid-column:1/2 ;
+            grid-row: 2/3;  margin-top: 60px;
+        }
+        .item-6{
+            grid-column:2/3 ;
+            grid-row: 2/3;margin-top: 60px;
         }
     </style>
 </head>
-<body class="project">
+
+<body>
     <a href="main.html">Home</a>
-    
-    <div class="texte">
-        <h1>Analyse Cathdrale</h1>
+    <h1>Analyse Cathdrale</h1>
         <p>Anayse tous les élément de la cathédrale d'amiens et l'interpréter
             graphiquement. <br>En interprétant graphiquement divers éléments de la 
             cathédrale, <br>
             j'ai fait un certain nombre des signes et sélectionné quelques formes 
             parmi elles.<br> aprés j'ai procédé au travail d'installation.
         </p>
-    </div>
+    <div class="container">
 
-        <div class="item-1"><img src="./1jour/15p.jpg"alt ="img15"><div>
-        <div class="item-2"><img src="./1jour/19p.jpg"alt ="img19"><div>
-        <div class="item-3"><img src="./1jour/21p.jpg"alt ="img21"><div>
-         <div class="item-4"><img src="./1jour/22p.jpg"alt ="img22"><div>
-         <div class="item-5"><img src="./1jour/installation reel.jpg"alt ="reel"><div>
-        <div class="item-6"><img src="./1jour/installation.jpg"alt ="installation"><div>
-         <div class="item-7"><img src="./1jour/poster presentation.jpg"alt class="poster"><div>
-        <div class="item-8"><img src="./1jour/signe poster.jpg"alt class="signe"><div>
-       
+        <div class=item-1><img src="./1jour/15p.jpg"width=600px  alt ="img15"></div>
+        <div class=item-2><img src="./1jour/19p.jpg"width=600px  alt ="img19"></div>
+        <div class=item-3><img src="./1jour/21p.jpg" width=600px alt ="img21"></div>
+        <div class=item-4><img src="./1jour/22p.jpg"width=600px  alt ="img22"></div>
+        <div class=item-5><img src="./1jour/installation reel.jpg" width=600px alt ="reel"></div>
+        <div class=item-6><img src="./1jour/installation.jpg" width=600px alt ="installation"></div>
+        <div class=item-7> <img src="./1jour/poster presentation.jpg" width=400px alt ="poster"></div>
+        <div class=item-8><img src="./1jour/signe poster.jpg" width=400px alt ="signe"></div>
+      </div>
 </body>
 </html>
