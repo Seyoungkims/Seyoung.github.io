@@ -9,8 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300&family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
     <style>
-        @media (min-width: 360px){
-        .home {
+        @media (min-width: 100px){
+        .index{
         padding: 20px;
         display: grid;
         grid-template-columns: 1fr;
@@ -24,10 +24,10 @@
             border-radius: 5px;
             
         }
-        @media (min-width: 350px){.index{
+        @media (min-width:1000px){.index{
             display:grid;
             background-color:rgba(174, 174, 245, 5);
-            grid-template-columns: repeat(2,2fr);
+            grid-template-columns: repeat(2,1fr);
             grid-template-rows: repeat(3,minimax(100px,auto));
             gap:8px;
             justify-items:center;
@@ -47,15 +47,32 @@
                 grid-row:2/3;
                 
         }
+        a{
+            text-shadow: 2px 2px 2px rgb(58, 7, 199);color: cornsilk;text-decoration:none;
+        }
+
+        
+        h1,p{
+            color:blanchedalmond;
+        }
+        h1{
+            text-shadow: 0px 2px 2px blue ;
+        }
+
         
     </style>
 </head>
     <body class="index">
     <div class=texte>
+        <a href="index.html">Home (retour)</a>
         <h1>penser, classer.</h1>
-        <p>histoire du tissu</p>
+        <p>classement des textiles anciens
+        <br>j'ai mis en page en utilisant des tissu d'ancinennes et textiles<br>
+        Caractères typographiques utilisés dans le livre : castoro | paysage
+
+        </p>
     
-        <a href="index.html">Home</a>
+        
     
 </div>
     
